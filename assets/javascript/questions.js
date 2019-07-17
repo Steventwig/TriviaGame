@@ -1,52 +1,33 @@
 var triviaQuestions = [
     {
-        askedQuestion: "1 2 or 3",
-        avalibleChoices: ["1","2","3"],
-        correctAnswer: "1",
+        askedQuestion: "Where did Spanish flu originate?",
+        avalibleChoices: ["Spain","The USA","Poland"],
+        correctAnswer: "The USA",
     },
     {
-        askedQuestion: "4 5 or 6",
-        avalibleChoices: ["1","2","3"],
-        correctAnswer: "3",
+        askedQuestion: "Which country was the Caesar salad invented in?",
+        avalibleChoices: ["Rome","Hidden Valley","Mexico"],
+        correctAnswer: "Mexico",
     },
     {
-        askedQuestion: "7 8 or 9",
-        avalibleChoices: ["1","2","3"],
-        correctAnswer: "2",
+        askedQuestion: "What color is a purple finch?",
+        avalibleChoices: ["Raspberry red.","Brazilwood","United Nations Blue"],
+        correctAnswer: "Raspberry red.",
     },
     {
-        askedQuestion: "1 2 or 3",
-        avalibleChoices: ["1","2","3"],
-        correctAnswer: "1",
+        askedQuestion: "What kind of animal is the horned toad?",
+        avalibleChoices: ["A lizard","A frog","A toad"],
+        correctAnswer: "A lizard",
     },
     {
-        askedQuestion: "4 5 or 6",
-        avalibleChoices: ["1","2","3"],
-        correctAnswer: "3",
+        askedQuestion: "What is the main ingredient of Bombay Duck?",
+        avalibleChoices: ["Duck","Dog","Fish"],
+        correctAnswer: "Fish",
     },
     {
-        askedQuestion: "7 8 or 9",
-        avalibleChoices: ["1","2","3"],
-        correctAnswer: "2",
+        askedQuestion: "What kind of animal is a prairie dog?",
+        avalibleChoices: ["Arthropod","Rodent","Flightless bird"],
+        correctAnswer: "Rodent",
     },
-    {
-        askedQuestion: "1 2 or 3",
-        avalibleChoices: ["1","2","3"],
-        correctAnswer: "1",
-    },
-    {
-        askedQuestion: "4 5 or 6",
-        avalibleChoices: ["1","2","3"],
-        correctAnswer: "3",
-    },
-    {
-        askedQuestion: "7 8 or 9",
-        avalibleChoices: ["1","2","3"],
-        correctAnswer: "2",
-    },
-    {
-        askedQuestion: "7 8 or 9",
-        avalibleChoices: ["1","2","3"],
-        correctAnswer: "2",
-    },
+    
 ];
