@@ -1,4 +1,4 @@
-var countDownValue = 5;
+var countDownValue = 15;
 var onScreenQuestion = 0;
 var wins = 0;
 var losses = 0;
@@ -40,7 +40,7 @@ function showChoices(avalibleChoices) {
     }
 }
 function showQuestions() {
-    countDownValue = 5;
+    countDownValue = 15;
     timer =setInterval(countDown, 1000);
     var tempQuestion = triviaQuestions[onScreenQuestion].askedQuestion;
     var tempChoices = triviaQuestions[onScreenQuestion].avalibleChoices;
@@ -73,9 +73,19 @@ $(document).on('click','#imDone',function(){
     $('#timer').empty();
     $('#gameArea').empty();
 });
+function imgCountDown(){
+    $('#gif').animate({bottom: '0'}, 'slow');
+    $('#gif').delay( 1800 )
+    $('#gif').animate({bottom: '-480px'}, 'slow');
+    }
+    
 $(document).on('click','#start',function(){
     onScreenQuestion = 0;
     wins = 0;
     losses = 0;
     showQuestions();
+    setInterval(imgCountDown, 10000)
 });
+
+
+ 
