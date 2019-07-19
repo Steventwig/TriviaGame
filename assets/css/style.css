@@ -19,3 +19,6 @@ body{
     position: fixed;
     bottom: -480px;
 }
+#correctWrong{
+    color: white;
+}

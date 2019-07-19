@@ -49,16 +49,18 @@ function showQuestions() {
     showChoices(tempChoices);
 }
 
+
+
 $(document).on('click','.selectedAnswer',function(){
     clearInterval(timer);
     var chosenAnswerIndex = $(this).attr('data-id');
     var chosenAnswer = triviaQuestions[onScreenQuestion].avalibleChoices[chosenAnswerIndex];
     var rightAnswer = triviaQuestions[onScreenQuestion].correctAnswer;
     if (rightAnswer === chosenAnswer) {
-        console.log("Correct");
         wins++;
+        $('#correctWrong').html("<h1>Right Answer!</h1>");
     } else {
-        console.log("Incorrect");
+        $('#correctWrong').html("<h1>Wrong Answer!</h1>");
         losses++;
     }
     loadNextQuestion();
@@ -72,6 +74,7 @@ $(document).on('click','#restartButton',function(){
 $(document).on('click','#imDone',function(){
     $('#timer').empty();
     $('#gameArea').empty();
+    $('#correctWrong').empty()
 });
 function imgCountDown(){
     $('#gif').animate({bottom: '0'}, 'slow');
@@ -80,11 +83,13 @@ function imgCountDown(){
     }
     
 $(document).on('click','#start',function(){
+    $('#start').hide()
     onScreenQuestion = 0;
     wins = 0;
     losses = 0;
     showQuestions();
     setInterval(imgCountDown, 10000)
+    clearInterval();
 });
 
 
